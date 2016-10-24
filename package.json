@@ -7,6 +7,10 @@
     "dev": "node build/server.babel.js",
     "pro": "node build/build.babel.js --env=production"
   },
+  "repository" :{
+	  "type" : "git",
+	  "url" : "https://github.com/xiaopili/react.git"
+  },
   "author": "liangxiao",
   "license": "ISC",
   "dependencies": {
