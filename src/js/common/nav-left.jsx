@@ -17,7 +17,10 @@ const style = {
     display: 'inline-block',
     float: 'left',
     margin: '10px 32px 16px 2%',
-	height: '500px'
+	height: '500px',
+	position: 'fixed',
+	top: '74px',
+	left: 0
   },
   rightIcon: {
     textAlign: 'center',
@@ -32,7 +35,7 @@ const style = {
 const MenuExampleIcons = () => (
   <div>
     <Paper style={style.paper}>
-      <Menu>
+      <Menu autoWidth={true}>
         <MenuItem leftIcon={<RemoveRedEye />}>
 			<Link style={style.link} to="/component/list">组件列表</Link>
 		</MenuItem>

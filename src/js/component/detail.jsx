@@ -1,11 +1,11 @@
 import React from 'react';
 class componentDetail extends React.Component {
-  state = {};
+  state = {
+	  type: 'componentDetail'
+  };
   render() {
     return (
-      <div>
-        componentDetail
-      </div>
+      <div>{this.state.type}</div>
     );
   }
 }

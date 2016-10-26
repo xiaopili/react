@@ -1,9 +1,17 @@
 body,html{padding: 0;margin: 0}
 .black{
 	background-color: black;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
 }
 .routerView{
 	padding: 10px 0 0 10px;
+	.content{
+		margin: 74px 0 0 200px;
+		width: (100% -200)
+	}
 }
 .default{
 	padding: 10px 0 0 10px;
