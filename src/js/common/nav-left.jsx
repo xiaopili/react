@@ -17,7 +17,7 @@ const style = {
     display: 'inline-block',
     float: 'left',
     margin: '10px 32px 16px 2%',
-	height: '500px',
+	height: '600px',
 	position: 'fixed',
 	top: '74px',
 	left: 0

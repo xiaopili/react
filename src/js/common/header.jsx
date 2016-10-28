@@ -33,11 +33,6 @@ const Logged = (props) => (
 
 Logged.muiName = 'IconMenu';
 
-/**
- * This example is taking advantage of the composability of the `AppBar`
- * to render different components depending on the application state.
- */
-
 class AppBarExampleComposition extends Component {
   state = {
     logged: true,
@@ -49,12 +44,12 @@ class AppBarExampleComposition extends Component {
 
   render() {
     return (
-      <div className="black">
+      <div className="header">
         <AppBar
           title="美信数据开放平台"
           iconElementLeft={<IconButton><ActionHome></ActionHome></IconButton>}
           iconElementRight={this.state.logged ? <Logged /> : <Login />}
-		  className="black"
+		  className="header"
 		  style={{backgroundColor:'#26A69A'}}
         />
       </div>
