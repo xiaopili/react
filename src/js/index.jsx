@@ -1,6 +1,3 @@
-/**
- * Created by liangxiao on 16/10/14.
- */
 import React from "react";
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBarExampleComposition from './common/header.jsx';

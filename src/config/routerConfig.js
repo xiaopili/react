@@ -3,6 +3,7 @@ import componentDetail from '../js/component/detail.jsx';
 import componentEdit from '../js/component/edit.jsx';
 import componentList from '../js/component/list.jsx';
 import componentIndex from '../js/component/index.jsx';
+import componentTodo from '../js/component/todoList/index.jsx';
 import Logs from '../js/logs/Logs.jsx';
 
 
@@ -25,6 +26,9 @@ export default {
 			}, {
 				path: 'logs',
 				component: Logs
+			}, {
+				path: 'todo',
+				component: componentTodo
 			}]
 		}
 	]

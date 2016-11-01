@@ -45,6 +45,9 @@ const MenuExampleIcons = () => (
 		<MenuItem leftIcon={<ContentLink />}>
 			<Link style={style.link} to="/component/edit">组件编辑</Link>
 		</MenuItem>
+		<MenuItem leftIcon={<ContentLink />}>
+			<Link style={style.link} to="/component/todo">todo</Link>
+		</MenuItem>
         <Divider />
         <MenuItem leftIcon={<ContentCopy />}>
 			<Link style={style.link} to="/component/logs">操作日志</Link>

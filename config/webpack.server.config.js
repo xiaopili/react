@@ -14,6 +14,9 @@ let webpackConfig = {};
 
 webpackConfig = merge(baseWebpackConfig, {
 	devtool: '#eval-source-map',
+	devServer: {
+  		historyApiFallback: true,
+	},
 	plugins: [
 		new webpack.optimize.OccurenceOrderPlugin(),
 		new webpack.HotModuleReplacementPlugin(),
