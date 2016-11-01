@@ -13,23 +13,23 @@ import Delete from 'material-ui/svg-icons/action/delete';
 import FontIcon from 'material-ui/FontIcon';
 
 const style = {
-  paper: {
-    display: 'inline-block',
-    float: 'left',
-    margin: '10px 32px 16px 2%',
-	height: '600px',
-	position: 'fixed',
-	top: '74px',
-	left: 0
-  },
-  rightIcon: {
-    textAlign: 'center',
-    lineHeight: '24px',
-  },
-  link: {
-	  color: 'black',
-	  textDecoration: 'none'
-  }
+	paper: {
+		display: 'inline-block',
+		float: 'left',
+		margin: '10px 32px 16px 2%',
+		height: '600px',
+		position: 'fixed',
+		top: '74px',
+		left: 0
+	},
+	rightIcon: {
+		textAlign: 'center',
+		lineHeight: '24px',
+	},
+	link: {
+		color: 'black',
+		textDecoration: 'none'
+	}
 };
 
 const MenuExampleIcons = () => (

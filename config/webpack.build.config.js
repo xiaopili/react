@@ -21,7 +21,7 @@ webpackConfig = merge(baseWebpackConfig, {
 	plugins: [
 		new webpack.optimize.OccurenceOrderPlugin(),
 		// extract css string to file
-		new ExtractTextPlugin('assets/css/[name].[contenthash].scss'),
+		new ExtractTextPlugin('assets/css/[name].[contenthash].css'),
 		new webpack.optimize.CommonsChunkPlugin({
 			name: 'vendor',
 			minChunks: (module, count) => {

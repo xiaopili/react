@@ -1,6 +1,7 @@
 import webpack from 'webpack';
 import path from 'path';
 import baseConfig from './base.config.js';
+import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
 const pwd = __dirname;
 const rootPath = path.join(pwd, '../');
@@ -37,7 +38,8 @@ module.exports = {
 
 			{
 				test: /\.scss$/,
-				loader: 'style!css!sass?sourceMap'
+				loaders: ["style", "css", "sass"],
+                exclude: /node_modules/
     		},
 
             {

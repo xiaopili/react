@@ -5,13 +5,17 @@ import { syncHistoryWithStore, routerReducer } from 'react-router-redux';
 import { Provider } from 'react-redux';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import { createStore, combineReducers } from 'redux';
-// import reducers from './redux/reducers';
+
+import env from '../config/env.config.js';
 import * as reducers from './redux/reducers';
 
 import './assets/css/index.scss';
 
 import routes from './config/routerConfig.js';
 
+if (env === 'production') {
+
+}
 injectTapEventPlugin();
 
 const store = createStore(
@@ -21,9 +25,7 @@ const store = createStore(
 	})
 );
 
-// const store = createStore(reducer);
-
-const history = syncHistoryWithStore(browserHistory, store);
+const history = env === 'production'?syncHistoryWithStore(browserHistory, store) : hashHistory;
 
 render(
 	<Provider store={store}>

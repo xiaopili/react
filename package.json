@@ -4,7 +4,7 @@
   "description": "react-webpack-express",
   "main": "index.js",
   "scripts": {
-    "dev": "node build/server.babel.js",
+    "dev": "node build/server.babel.js --env=dev",
     "pro": "node build/build.babel.js --env=production"
   },
   "repository": {
